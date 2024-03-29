@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Website</title>
     <link rel="stylesheet" href="style.css"> <!-- Make sure the path to your CSS file is correct -->
+    <link rel="stylesheet" href="">
 </head>
 
 <body>
     <nav class="menu">
         <ul>
-            <li><a href="#hyperlinks" class="menu-link">Hyperlinks</a></li>
-            <li><a href="#history" class="menu-link">History</a></li>
-            <li><a href="#http" class="menu-link">HTTP</a></li>
+            
+            <li><a href="index.html" class="menu-link">Home</a></li>
+            <li><a href="hyperlinks.html" class="menu-link">Hyperlinks</a></li>
+            <li><a href="#history.html" class="menu-link">History</a></li>
+            <li><a href="#http.html" class="menu-link">HTTP</a></li>
         </ul>
     </nav>
     <div class="message">
@@ -26,6 +29,38 @@
         <!-- Content for each page will be loaded dynamically here -->
     </div>
     <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('.menu-link').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                // Remove the message section
+                const messageSection = document.querySelector('.message');
+                if (messageSection) {
+                    messageSection.remove();
+                }
+
+                // Get the href attribute of the clicked anchor link
+                const pageUrl = this.getAttribute('href');
+
+                // Fetch the content of the target HTML file
+                fetch(pageUrl)
+                    .then(response => response.text())
+                    .then(html => {
+                        // Remove any existing content
+                        document.querySelector('.container').innerHTML = '';
+
+                        // Create a new div element to hold the fetched content
+                        const contentDiv = document.createElement('div');
+                        contentDiv.innerHTML = html;
+
+                        // Append the content below the menu
+                        document.querySelector('.container').appendChild(contentDiv);
+                    })
+                    .catch(error => console.error('Error fetching page:', error));
+            });
+        });
+    </script>
 </body>
 </html>
 
