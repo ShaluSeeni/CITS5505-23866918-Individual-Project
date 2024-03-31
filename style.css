@@ -1,53 +1,43 @@
-.intro-text {
-    font-size: 18px; /* Specify your desired font size */
-    line-height: 1.5; /* Adjust line height for better readability */
-    color: #333; /* Specify your desired text color */
-}
-
-header h1 {
-    font-size: 32px; /* Adjust heading font size */
-    font-weight: bold; /* Make heading bold */
-}
-
-header h2 {
-    font-size: 24px; /* Adjust subheading font size */
-}
-
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('https://i.stack.imgur.com/zGR9G.jpg');
-    background-size: cover; /* Cover the entire background */
-    background-repeat: no-repeat; /* Do not repeat the background image */
-    background-position: center; /* Center the background image */
-    background-attachment: fixed; /* Fixed background position */
+    background-color: #f2f2f2;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.header h1 {
+    font-size: 36px;
+    color: #333;
+    margin: 0;
 }
 
 .menu {
-    background-color: rgb(136, 128, 187);
-    color: white;
-    padding: 10px 0; /* Adjust top and bottom padding */
-    text-align: center;
-}
-
-.menu h1 {
-    margin: 0; /* Remove default margin */
-    font-weight: bold; /* Make the text bold */
-    font-size: 72px; /* Increase the font size */
+    background-color: #333;
+    padding: 10px 0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .menu ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Center menu items horizontally */
+    text-align: center;
 }
 
 .menu ul li {
+    display: inline-block;
     margin-right: 20px;
 }
 
@@ -58,31 +48,38 @@ body {
 .menu ul li a {
     text-decoration: none;
     color: white;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
 .menu ul li a:hover {
-    text-decoration: underline;
+    color: #ddd;
 }
 
-.message {
-    padding-top: 100px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 100%;
+.graphic {
+    display: block;
+    margin: 40px auto;
+    max-width: 100%;
+    margin-top: -50px;
 }
 
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: calc(100vh - 100px); /* Adjust for menu height */
-}
 
-.container .content {
+.main {
+    background-color: white;
     padding: 20px;
-    overflow-y: auto; /* Add scrollbar if content exceeds height */
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.content {
+    text-align: justify;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
