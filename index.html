@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website</title>
+    <title>Individual Project</title>
     <link rel="stylesheet" href="style.css"> <!-- Make sure the path to your CSS file is correct -->
+    <style>
+        /* Additional CSS for background image */
+        body {
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -22,7 +29,7 @@
                 <li><a href="index.html" class="menu-link">Home</a></li>
                 <li><a href="hyperlinks.html" class="menu-link">Hyperlinks</a></li>
                 <li><a href="history.html" class="menu-link">History</a></li>
-                <li><a href="http.html" class="menu-link">HTTP</a></li>
+                <li><a href="http.html" class="menu-link">Author's Bio</a></li> <!-- Update the href accordingly -->
             </ul>
         </nav>
         <main class="main">
@@ -32,20 +39,29 @@
                 <p>Trace the origins of hyperlinks, from their inception to their widespread adoption, and explore their transformative impact on how we navigate, share, and consume information online.</p>
                 <p>Join us as we unravel the intricate web of hyperlinks, revealing their pivotal role in shaping the digital landscape and empowering users to traverse the vast expanse of the World Wide Web.</p>
             </section>
-            <script>
-                if (window.location.pathname.endsWith("index.html")) {
-                    document.write('<svg class="graphic" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500"> \
-                        <circle cx="250" cy="250" r="200" fill="#f2f2f2"/> \
-                        <rect x="100" y="100" width="300" height="300" fill="#333"/> \
-                        <!-- Display the GIF image --> \
-                        <image x="100" y="100" width="300" height="300" xlink:href="https://media.giphy.com/media/1BfRG8cK5SPOer97aK/giphy.gif"/> \
-                    </svg>');
-                }
-            </script>
+            
         </main>
     </div>
     <script src="script.js"></script>
     <script>
+        // Function to set random background image
+        function setRandomBackgroundImage() {
+            // Define an array of background images
+            const images = ['bg1.jpg','bg2.jpg']; // Add more images as needed
+
+            // Get a random index from the images array
+            const randomIndex = Math.floor(Math.random() * images.length);
+
+            // Get the random image from the array
+            const randomImage = images[randomIndex];
+
+            // Set background image to the body
+            document.body.style.backgroundImage = `url('${randomImage}')`;
+        }
+
+        // Call the function when the page loads
+        setRandomBackgroundImage();
+        
         // Get all menu links
         document.querySelectorAll('.menu-link').forEach(anchor => {
             // Add click event listener to each menu link

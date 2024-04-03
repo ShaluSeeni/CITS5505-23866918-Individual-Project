@@ -1,70 +1,61 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; /* Apply Arial font family */
+    font-size: 16px; /* Set a base font size */
+    line-height: 1.6; /* Set line height for better readability */
     margin: 0;
     padding: 0;
 }
 
-.header {
+.content {
+    padding: 30px;
+    border-radius: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #007bff;
+    font-size: 20px; /* Increase heading font size for emphasis */
+    font-weight: bold; /* Apply bold font weight to headings */
+}
+
+h3 {
+    color: #007bff;
+    font-size: 20px; /* Increase subheading font size */
+    font-weight: bold;
+}
+
+p, ul, ol, pre {
+    font-size: 16px; /* Apply base font size to paragraphs, lists, and preformatted text */
+}
+
+ul, ol {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+pre {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.footer {
+    text-align: center;
     background-color: #007bff;
     color: #fff;
-    text-align: center;
-    padding: 50px 0;
-}
-
-.header h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-.header p {
-    font-size: 18px;
-    margin-bottom: 20px;
+    padding: 20px 0;
+    border-top: 2px solid #009688;
 }
 
 .container {
     max-width: 1500px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
-
-.content {
-    background-image: url('background.jpg'); /* Replace 'background.jpg' with your image file */
-    background-size: cover;
-    background-position: center;
-    padding: 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: justify;
-}
-
-.content h2 {
-    color: #090101;
-}
-
-.content p {
-    color: #851f1f;
-    line-height: 1.6;
-}
-
-pre {
-    background-color: rgba(255, 255, 255, 0.7);
-    padding: 10px;
-    overflow-x: auto;
-}
-
-a {
-    color: #240dbe;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.footer {
-    background-color: #007bff;
-    color: #fff;
-    text-align: center;
-    padding: 10px 0;
-}
-

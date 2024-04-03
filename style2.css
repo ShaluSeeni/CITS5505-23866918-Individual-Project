@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #333;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  h1 {
+    text-align: center;
+    color: #009688;
+  }
+  section {
+    margin-bottom: 30px;
+  }
+  h2 {
+    color: #009688;
+  }
+  p {
+    line-height: 1.6;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  ul li {
+    margin-bottom: 5px;
+  }
+  .timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .event {
+    display: table;
+    margin-bottom: 30px;
+    border-collapse: collapse; /* Ensure borders collapse properly */
+  }
+  .year,
+  .description {
+    display: table-cell;
+    vertical-align: middle; /* Align both year and description vertically */
+    padding: 10px; /* Add padding for spacing */
+    border: 1px solid #ccc; /* Add borders */
+    background-color: #f9f9f9; /* Light gray background color */
+  }
+  .year {
+    font-weight: bold;
+    color: #009688;
+    width: 100px;
+    white-space: nowrap; /* Prevents the year from wrapping */
+  }
+  .description {
+    padding-left: 20px; /* Add some left padding for spacing */
+  }
+  .btn {
+    padding: 10px 20px;
+    background-color: #009688;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #00796b;
+  }
