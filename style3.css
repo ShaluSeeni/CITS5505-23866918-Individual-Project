@@ -1,91 +1,107 @@
+/* Base styles for the body */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f2f2f2;
+    font-family: Arial, sans-serif; /* Use Arial font or fallback to sans-serif */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f2f2f2; /* Set background color */
 }
 
+/* Styles for the header */
 header {
-    text-align: center;
-    margin-bottom: 20px;
+    text-align: center; /* Center-align text */
+    margin-bottom: 20px; /* Add space at the bottom */
 }
 
+/* Styles for the header's h1 element */
 header h1 {
-    color: #333;
+    color: #333; /* Set text color */
 }
 
+/* Styles for the main container */
 .container {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    max-width: 1000px; /* Limit width of container */
+    margin: 20px auto; /* Center container horizontally with some margin */
+    padding: 20px; /* Add padding inside container */
+    background-color: #fff; /* Set background color */
+    border-radius: 5px; /* Add rounded corners */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add shadow */
 }
 
+/* Styles for the main section */
 main {
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Use flexbox layout */
+    justify-content: space-between; /* Space items evenly along the main axis */
 }
 
+/* Styles for the profile and contact information */
 .profile-contact {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
 }
 
+/* Styles for the profile section */
 .profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    flex-direction: column;
-    flex: 0 0 45%;
+    display: flex; /* Use flexbox layout */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Add space at the bottom */
+    flex-direction: column; /* Stack items vertically */
+    flex: 0 0 45%; /* Set flex basis */
 }
 
+/* Styles for the profile picture */
 .profile-picture {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 20px;
+    width: 150px; /* Set width */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 50%; /* Make it circular */
+    margin-right: 20px; /* Add space to the right */
 }
 
+/* Styles for the profile information */
 .profile-info {
-    text-align: center;
+    text-align: center; /* Center-align text */
 }
 
+/* Styles for the contact information */
 .contact-info {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center; /* Center-align text */
+    margin-top: 20px; /* Add space at the top */
 }
 
+/* Styles for headings */
 h2, h3 {
-    color: #333;
+    color: #333; /* Set text color */
 }
 
+/* Styles for unordered lists */
 ul {
-    list-style: disc;
-    padding: 0;
-    margin-left: 20px;
+    list-style: disc; /* Use disc bullets */
+    padding: 0; /* Remove default padding */
+    margin-left: 20px; /* Add indentation */
 }
 
+/* Styles for paragraphs and list items */
 p, li {
-    color: #666;
-    line-height: 1.6;
+    color: #666; /* Set text color */
+    line-height: 1.6; /* Set line height */
 }
 
+/* Styles for links */
 a {
-    color: #007bff;
-    text-decoration: none;
+    color: #007bff; /* Set link color */
+    text-decoration: none; /* Remove default underline */
 }
 
+/* Styles for links on hover */
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
 
+/* Styles for section boxes */
 .section-box {
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-color: rgb(254, 208, 251);
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 5px; /* Add rounded corners */
+    margin-bottom: 20px; /* Add space at the bottom */
+    padding: 20px; /* Add padding */
+    background-color: rgb(254, 208, 251); /* Set background color */
 }

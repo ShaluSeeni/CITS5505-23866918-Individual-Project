@@ -1,104 +1,139 @@
+/* Base styles for the body */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-    color: #333;
-  }
-  .container {
-    max-width: 1000px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  h1 {
-    text-align: center;
-    color: #009688;
-  }
-  section {
-    margin-bottom: 30px;
-  }
-  h2 {
-    color: #009688;
-  }
-  p {
-    line-height: 1.6;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  ul li {
-    margin-bottom: 5px;
-  }
-  .timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .event {
-    display: table;
-    margin-bottom: 30px;
-    border-collapse: collapse; /* Ensure borders collapse properly */
-  }
-  .year,
-  .description {
-    display: table-cell;
-    vertical-align: middle; /* Align both year and description vertically */
-    padding: 10px; /* Add padding for spacing */
-    border: 1px solid #ccc; /* Add borders */
-    background-color: #f9f9f9; /* Light gray background color */
-  }
-  .year {
-    font-weight: bold;
-    color: #009688;
-    width: 100px;
-    white-space: nowrap; /* Prevents the year from wrapping */
-  }
-  .description {
-    padding-left: 20px; /* Add some left padding for spacing */
-  }
-  .btn {
-    padding: 10px 20px;
-    background-color: #009688;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  .btn:hover {
-    background-color: #00796b;
-  }
-
-  .footer {
-    background-color: rgb(253, 251, 117); /* Light gray background */
-    padding: 20px; /* Add some padding for spacing */
-    text-align: center; /* Center-align the content */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Set font family */
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  background-color: #f0f0f0; /* Set background color */
+  color: #333; /* Set text color */
 }
 
+/* Styles for the main container */
+.container {
+  max-width: 1000px; /* Limit width of container */
+  margin: 20px auto; /* Center container horizontally with some margin */
+  padding: 20px; /* Add padding inside container */
+  background-color: #fff; /* Set background color */
+  border-radius: 10px; /* Add rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Styles for the main heading */
+h1 {
+  text-align: center; /* Center-align text */
+  color: #009688; /* Set heading color */
+}
+
+/* Styles for sections */
+section {
+  margin-bottom: 30px; /* Add space below each section */
+}
+
+/* Styles for secondary headings */
+h2 {
+  color: #009688; /* Set secondary heading color */
+}
+
+/* Styles for paragraphs */
+p {
+  line-height: 1.6; /* Set line height */
+}
+
+/* Styles for unordered lists */
+ul {
+  list-style: none; /* Remove default list styling */
+  padding: 0; /* Remove default padding */
+}
+
+/* Styles for list items */
+ul li {
+  margin-bottom: 5px; /* Add space below each list item */
+}
+
+/* Styles for the timeline section */
+.timeline {
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align items horizontally */
+}
+
+/* Styles for individual timeline events */
+.event {
+  display: table; /* Use table layout */
+  margin-bottom: 30px; /* Add space below each event */
+  border-collapse: collapse; /* Ensure borders collapse properly */
+}
+
+/* Styles for the year and description of each event */
+.year,
+.description {
+  display: table-cell; /* Use table-cell layout */
+  vertical-align: middle; /* Align both year and description vertically */
+  padding: 10px; /* Add padding for spacing */
+  border: 1px solid #ccc; /* Add borders */
+  background-color: #f9f9f9; /* Light gray background color */
+}
+
+/* Styles for the year */
+.year {
+  font-weight: bold; /* Make year text bold */
+  color: #009688; /* Set year text color */
+  width: 100px; /* Set fixed width */
+  white-space: nowrap; /* Prevent year from wrapping */
+}
+
+/* Styles for the description */
+.description {
+  padding-left: 20px; /* Add some left padding for spacing */
+}
+
+/* Styles for buttons */
+.btn {
+  padding: 10px 20px; /* Add padding */
+  background-color: #009688; /* Set background color */
+  color: #fff; /* Set text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Change cursor to pointer */
+  transition: background-color 0.3s ease; /* Add smooth transition */
+}
+
+/* Styles for button hover state */
+.btn:hover {
+  background-color: #00796b; /* Darken background color on hover */
+}
+
+/* Styles for the footer section */
+.footer {
+  background-color: rgb(253, 251, 117); /* Light gray background color */
+  padding: 20px; /* Add padding for spacing */
+  text-align: center; /* Center-align the content */
+}
+
+/* Styles for paragraphs within the footer */
 .footer p {
-    margin-bottom: 10px; /* Add some space below the copyright text */
+  margin-bottom: 10px; /* Add space below the paragraph */
 }
 
+/* Styles for unordered lists within the footer */
 .footer ul {
-    list-style: circle; /* Remove default list styling */
-    padding: 0;
+  list-style: circle; /* Use circle bullets */
+  padding: 0; /* Remove default padding */
 }
 
+/* Styles for list items within the footer */
 .footer li {
-    display: inline; /* Display list items horizontally */
-    margin-right: 10px; /* Add spacing between list items */
+  display: inline; /* Display list items horizontally */
+  margin-right: 10px; /* Add spacing between list items */
 }
 
+/* Styles for links within the footer */
 .footer a {
-    text-decoration: none; /* Remove underline from links */
-    color: #333; /* Set link color */
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
 }
 
+/* Styles for links within the footer on hover */
 .footer a:hover {
-    text-decoration: underline; /* Add underline on hover */
-    color: orangered; /* Change link color on hover */
+  text-decoration: underline; /* Add underline on hover */
+  color: orangered; /* Change link color on hover */
 }

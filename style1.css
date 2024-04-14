@@ -1,88 +1,100 @@
+/* Base styles for the entire document */
 body {
     font-family: Arial, sans-serif; /* Apply Arial font family */
     font-size: 16px; /* Set a base font size */
     line-height: 1.6; /* Set line height for better readability */
     margin: 0;
     padding: 0;
-    color: black;
+    color: black; /* Set default text color */
 }
 
+/* Styling for the main content section */
 .content {
-    padding: 30px;
-    border-radius: 20px;
-    background-color: #f9f9f9;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 40px;
+    padding: 30px; /* Add padding around the content */
+    border-radius: 20px; /* Apply rounded corners */
+    background-color: #f9f9f9; /* Light gray background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    margin-bottom: 40px; /* Add space between content sections */
 }
 
+/* Styling for heading level 2 */
 h2 {
-    color: #007bff;
+    color: #007bff; /* Set heading color */
     font-size: 20px; /* Increase heading font size for emphasis */
     font-weight: bold; /* Apply bold font weight to headings */
 }
 
+/* Styling for heading level 3 */
 h3 {
-    color: #007bff;
+    color: #007bff; /* Set subheading color */
     font-size: 20px; /* Increase subheading font size */
-    font-weight: bold;
+    font-weight: bold; /* Apply bold font weight to subheadings */
 }
 
+/* Base styling for paragraphs, lists, and preformatted text */
 p, ul, ol, pre {
-    font-size: 16px; /* Apply base font size to paragraphs, lists, and preformatted text */
-    color: black;
+    font-size: 16px; /* Apply base font size */
+    color: black; /* Set default text color */
 }
 
+/* Styling for unordered and ordered lists */
 ul, ol {
-    margin-left: 20px;
-    list-style-type: disc;
+    margin-left: 20px; /* Add left margin to lists */
+    list-style-type: disc; /* Use disc bullets for unordered lists */
 }
 
+/* Styling for preformatted text */
 pre {
-    background-color: #f0f0f0;
-    padding: 15px;
-    border-radius: 10px;
-    overflow-x: auto;
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 15px; /* Add padding */
+    border-radius: 10px; /* Apply rounded corners */
+    overflow-x: auto; /* Allow horizontal scrolling */
 }
 
+/* Styling for images */
 img {
-    max-width: 100%;
-    border-radius: 10px;
-    margin-bottom: 20px;
+    max-width: 100%; /* Ensure images don't exceed container width */
+    border-radius: 10px; /* Apply rounded corners to images */
+    margin-bottom: 20px; /* Add space below images */
 }
 
+/* Styling for the footer section */
 .footer {
     background-color: #8bebd2; /* Light gray background */
-    padding: 20px; /* Add some padding for spacing */
+    padding: 20px; /* Add padding for spacing */
     text-align: center; /* Center-align the content */
-    align: justify;
+    align: justify; /* Justify text alignment */
 }
 
+/* Styling for footer paragraphs */
 .footer p {
-    margin-bottom: 10px; /* Add some space below the copyright text */
+    margin-bottom: 10px; /* Add space below each paragraph */
 }
 
+/* Styling for footer ordered lists */
 .footer ol {
-    list-style-type: circle; /* Use decimal numbering */
-    padding: 0;
+    list-style-type: circle; /* Use circle bullets for ordered lists */
+    padding: 0; /* Remove default padding */
 }
 
+/* Styling for footer list items */
 .footer li {
-    margin-bottom: 5px; /* Add spacing between list items */
+    margin-bottom: 5px; /* Add space between list items */
 }
 
+/* Styling for footer links */
 .footer a {
     text-decoration: none; /* Remove underline from links */
     color: #333; /* Set link color */
 }
 
+/* Styling for footer links on hover */
 .footer a:hover {
     text-decoration: underline; /* Add underline on hover */
     color: #ed9404; /* Change link color on hover */
 }
 
-
+/* Set max-width for the container */
 .container {
-    max-width: 1500px;
+    max-width: 1500px; /* Limit container width */
 }
-
-

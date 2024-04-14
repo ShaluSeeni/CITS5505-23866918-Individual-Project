@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set and viewport -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
     <title>Individual Project</title>
-    <link rel="stylesheet" href="style.css"> <!-- Make sure the path to your CSS file is correct -->
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="style.css"> 
     <style>
         /* Additional CSS for background image */
         body {
@@ -15,29 +18,40 @@
 </head>
 
 <body>
+    <!-- Container for the entire page content -->
     <div class="container">
+        <!-- Header section -->
         <header class="header">
+            <!-- Welcome message displayed dynamically -->
             <h1 id="welcome-text"></h1>
+            <!-- JavaScript to set the welcome message -->
             <script>
                 if (window.location.pathname.endsWith("index.html")) {
                     document.getElementById('welcome-text').innerText = 'Welcome to the Hyperlink History Project';
                 }
             </script>
         </header>
+        <!-- Navigation menu -->
         <nav class="menu">
             <ul>
+                <!-- Menu items -->
                 <li><a href="index.html" class="menu-link">Home</a></li>
                 <li><a href="hyperlinks.html" class="menu-link">Hyperlinks</a></li>
                 <li><a href="history.html" class="menu-link">History</a></li>
+                <!-- External link to author's bio -->
                 <li><a href="http.html" class="menu-link">Author's Bio</a></li> <!-- Update the href accordingly -->
             </ul>
         </nav>
+        <!-- Main content section -->
         <main class="main">
             <section class="content">
+                <!-- Main heading -->
                 <h2>Unraveling the Web's DNA:</h2>
+                <!-- Paragraphs introducing the project -->
                 <p>Welcome to the Hyperlink History Project! Embark on an exhilarating expedition through the annals of cyberspace, where the humble hyperlink reigns supreme as the web's foundational element.</p>
                 <p>Trace the origins of hyperlinks, from their inception to their widespread adoption, and explore their transformative impact on how we navigate, share, and consume information online.</p>
                 <p>Join us as we unravel the intricate web of hyperlinks, revealing their pivotal role in shaping the digital landscape and empowering users to traverse the vast expanse of the World Wide Web.</p>
+                <!-- Section for displaying an image -->
                 <section class="anime">
                     <img id="nekoImage" src="" alt="Neko Image">
                 </section>
@@ -45,6 +59,7 @@
             
         </main>
     </div>
+    <!-- External JavaScript file -->
     <script src="script.js"></script>
     <script>
         // Function to set random background image
