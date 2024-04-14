@@ -72,3 +72,33 @@ body {
   .btn:hover {
     background-color: #00796b;
   }
+
+  .footer {
+    background-color: rgb(253, 251, 117); /* Light gray background */
+    padding: 20px; /* Add some padding for spacing */
+    text-align: center; /* Center-align the content */
+}
+
+.footer p {
+    margin-bottom: 10px; /* Add some space below the copyright text */
+}
+
+.footer ul {
+    list-style: circle; /* Remove default list styling */
+    padding: 0;
+}
+
+.footer li {
+    display: inline; /* Display list items horizontally */
+    margin-right: 10px; /* Add spacing between list items */
+}
+
+.footer a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Set link color */
+}
+
+.footer a:hover {
+    text-decoration: underline; /* Add underline on hover */
+    color: orangered; /* Change link color on hover */
+}

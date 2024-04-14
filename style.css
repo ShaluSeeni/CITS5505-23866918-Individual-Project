@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f2f2f2;
+    color: #101310;
 }
 
 .container {
@@ -73,6 +74,7 @@ body {
 
 .content {
     text-align: justify;
+   
 }
 
 h2 {
@@ -82,4 +84,15 @@ h2 {
 p {
     color: #555;
     line-height: 1.6;
+}
+/* Add to your CSS file or within a <style> tag in your HTML */
+.neko-image {
+    width: 100px;  /* Adjust width as needed */
+    height: auto;  /* Maintain aspect ratio */
+}
+
+.anime {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
