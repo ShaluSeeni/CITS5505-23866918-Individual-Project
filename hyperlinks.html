@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Title of the page -->
     <title>Hyperlink Definition for HTML Link Beginners</title>
+    <!-- Style for table -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
     <!-- Link to external CSS file -->
     <link rel="stylesheet" href="style1.css">
 </head>
@@ -17,8 +34,9 @@
             <!-- Heading for the definition of a hyperlink -->
             <h2>What is a Hyperlink?</h2>
             <!-- Description of a hyperlink -->
-            <li>Hyperlinks, fundamental to the structure of the World Wide Web, are elements within web documents that facilitate navigation by connecting one webpage to another. Employing the <code>&lt;a&gt;</code> (anchor) element in HTML, hyperlinks allow users to seamlessly traverse various online resources, whether within the same website or across different domains. The <code>href</code> attribute embedded within the anchor tag specifies the destination URL, determining where the link will direct users upon activation. Hyperlinks can be textual, graphical, or even embedded within other media, providing versatility in presentation. They serve as the backbone of web navigation, enabling users to access a wealth of information with just a click. In essence, hyperlinks epitomize the interconnected nature of the internet, fostering a dynamic and expansive network of digital content and resources.</li>
-
+            <ul>
+                <li>Hyperlinks, fundamental to the structure of the World Wide Web, are elements within web documents that facilitate navigation by connecting one webpage to another. Employing the <code>&lt;a&gt;</code> (anchor) element in HTML, hyperlinks allow users to seamlessly traverse various online resources, whether within the same website or across different domains. The <code>href</code> attribute embedded within the anchor tag specifies the destination URL, determining where the link will direct users upon activation. Hyperlinks can be textual, graphical, or even embedded within other media, providing versatility in presentation. They serve as the backbone of web navigation, enabling users to access a wealth of information with just a click. In essence, hyperlinks epitomize the interconnected nature of the internet, fostering a dynamic and expansive network of digital content and resources.</li>
+            </ul>
             <!-- Heading for hyperlinks implementation -->
             <h3>Hyperlinks Implementation</h3>
             <p><strong>Developer's Perspective:</strong></p>
@@ -67,23 +85,7 @@
 
             <!-- HTML Links - Target Attribute section -->
             <h1>HTML Links - Target Attribute</h1>
-            <!-- Style for table -->
-            <style>
-                table {
-                    width: 100%;
-                    border-collapse: collapse;
-                    border: 1px solid #ddd;
-                    margin-bottom: 20px;
-                }
-                th, td {
-                    padding: 8px;
-                    text-align: left;
-                    border-bottom: 1px solid #ddd;
-                }
-                th {
-                    background-color: #f2f2f2;
-                }
-            </style>
+            
             <!-- Description of the target attribute -->
             <p>The <code>target</code> attribute specifies where to open the linked document. It is used with the <code>&lt;a&gt;</code> tag and takes the following values:</p>
             <!-- Table of target attribute values -->
@@ -124,7 +126,7 @@
             <!-- How to add a Picture to a Page section -->
             <h3>How to add a Picture to a Page</h3>
             <!-- Code example and description for adding a picture -->
-            <p>
+            <div>
                 <strong>Code example:</strong>
                 <br>
                 <pre>
@@ -135,13 +137,13 @@
                 <strong>What the visitor sees on the page:</strong>
                 <br>
                 <!-- Image displayed -->
-                <img src="house.jpg" align="center" alt="House Image">
-            </p>
+                <img src="house.jpg"  alt="House Image">
+            </div>
 
             <!-- How to Add an Email Address to a Page section -->
             <h3>How to Add an Email Address to a Page</h3>
             <!-- Code example and description for adding an email address -->
-            <p>
+            <div>
                 <strong>Code example:</strong>
                 <br>
                 <pre>
@@ -153,15 +155,15 @@
                 <br>
                 <!-- Email link displayed -->
                 <a href="mailto:webmaster@rcma.org">Contact Us</a>
-            </p>
+            </div>
 
             <!-- HTML Link Best Practices section -->
-            <h7>HTML Link Best Practices</h7>
+            <h6>HTML Link Best Practices</h6>
             <!-- List of best practices for HTML links -->
             <p>To ensure an excellent user experience and maintain web accessibility and SEO (Search Engine Optimization) standards, you can follow certain best practices when working with links in HTML.</p>
 
             <!-- Best practice: Use descriptive text -->
-            <h8>Use Descriptive Text</h8>
+            <h6>Use Descriptive Text</h6>
             <p>The text used for link anchors should be descriptive and convey the purpose of the link to users. Avoid generic phrases like "click here."</p>
             <!-- Example links with and without descriptive text -->
             <p><strong>Not Recommended:</strong> <a href="https://www.example.com">Click here</a></p>

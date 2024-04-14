@@ -56,6 +56,7 @@ img {
     max-width: 100%; /* Ensure images don't exceed container width */
     border-radius: 10px; /* Apply rounded corners to images */
     margin-bottom: 20px; /* Add space below images */
+    align-items:center ;
 }
 
 /* Styling for the footer section */
